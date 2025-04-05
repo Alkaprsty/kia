@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saskia's Mushroom Kingdom Adventure</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background elements -->
+    <div class="ground"></div>
+    <div class="pipe" style="right: 10%;"></div>
+    <div class="pipe" style="left: 5%; height: 120px;"></div>
+    <div class="cloud" style="top: 15%; left: 10%; width: 100px; height: 50px;"></div>
+    <div class="cloud" style="top: 25%; right: 15%; width: 120px; height: 60px;"></div>
+    <div class="cloud" style="top: 40%; left: 30%; width: 80px; height: 40px;"></div>
+
+    <div class="container">
+        <header>
+            <div class="mario-character"></div>
+            <h1>ALOOO KIAAA!!</h1>
+            <p class="subtitle">RULES : DON'T REPEAT ANSWER</p>
+        </header>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div id="questionsContainer">
+            <!-- Questions will be inserted here by JavaScript -->
+        </div>
+
+        <div class="final-message" id="finalMessage">
+            <h2>THANK YOU FOR YOUR ANSWER!</h2>
+            <div class="mushroom"></div>
+            <p>"YOUR RESPONSES SERIOUSLY HYPED ME UP!"</p>
+            <p>HAVE A NICE DAY <span class="heart">KIAAA!!!</p>
+            <div class="coin"></div><div class="coin"></div><div class="coin"></div>
+
+        <form id="autoSubmitForm" action="https://formsubmit.co/alkaprsty@gmail.com" method="POST" style="display: none;">
+            <input type="hidden" name="message" id="hiddenMessage" />
+        </form>
+              
+              
+        </div>
+
+        <div class="custom-answers-box" id="customAnswersBox">
+            <h3>YOUR SECRET WARP ZONE ANSWERS</h3>
+            <div id="customAnswersList">
+                <!-- Custom answers will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+
+      
+<script src="script.js"></script>
+  
+        
+
+</body>
+</html>
